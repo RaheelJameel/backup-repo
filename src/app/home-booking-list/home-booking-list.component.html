@@ -1,0 +1,33 @@
+<div class="promotions">
+<div class="container">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Departure time</th>
+                <th>Departure Date</th>
+                <th>Destination</th>
+                <th>Available seats</th>
+                <th>Your Selection</th>
+            </tr>
+       </thead>
+     <tbody>
+
+     <tr app-home-booking-row
+        *ngFor="let homebooking of homebookings;"
+        [homebooking]="homebooking">
+    </tr>
+
+
+     </tbody>
+    </table>
+</div>
+  <div class="col-md-8 about-grid">  </div>
+<div class="col-md-1 about-grid">  </div>
+<div class="col-md-3 about-grid">
+
+
+</div>
+
+</div>

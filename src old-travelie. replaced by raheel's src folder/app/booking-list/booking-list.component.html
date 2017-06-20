@@ -1,0 +1,38 @@
+<div class="promotions">
+<div class="container">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Departure time</th>
+                <th>Departure Date</th>
+                <th>Destination</th>
+                <th>Available seats</th>
+                <th>Your Selection</th>
+            </tr>
+       </thead>
+     <tbody>
+
+     <app-booking-row
+        *ngFor="let vanType of vanTypes; let departureTime of departureTimes; let departureDate of departureDates; let destination of destinations; let availableSeat of availableSeats; let bookingID of bookingIDs"
+        [vanType]="vanType"
+        [departureTime]="departureTime"
+        [departureDate]="departureDate"
+        [destination]="destination"
+        [availableSeat]="availableSeat"
+        [bookingID]="bookingID">
+     </app-booking-row>
+
+
+     </tbody>
+    </table>
+</div>
+  <div class="col-md-8 about-grid">  </div>
+<div class="col-md-1 about-grid">  </div>
+<div class="col-md-3 about-grid">
+
+
+</div>
+
+</div>
